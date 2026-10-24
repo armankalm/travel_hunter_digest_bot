@@ -1,0 +1,40 @@
+# Каналы и группы. Можно писать @username, username или ссылку t.me/...
+sources:
+  - https://t.me/ticketal
+  - https://t.me/charterticketsme
+  - https://t.me/charterkzticket
+  - https://t.me/bilettu
+  - https://t.me/charterkaz
+
+# Показывать только вылеты из этих городов
+origins: [Алматы, Астана, Шымкент, Бишкек]
+
+# При первом запуске забрать посты за столько дней назад
+first_run_days: 7
+
+# Туры (перелёт + отель) тоже показывать? false = только билеты
+include_tours: false
+
+# Сколько самых дешёвых рейсов показывать на направление (0 = все)
+max_per_direction: 10
+
+# Синонимы городов и авиакомпаний → одно написание
+aliases:
+  Анталия: Анталья
+  Мальдивы: Мале
+  Хайнань: Санья
+  Камрань: Нячанг
+  Маттала: Хамбантота
+  Air Asia: AirAsia
+  P: Pegasus
+  Pegasus Airlines: Pegasus
+  SE: SunExpress
+  Scat: SCAT
+
+# Запасные курсы (тенге за единицу), если не удалось получить актуальные
+fallback_rates_kzt:
+  USD: 540
+  EUR: 590
+  KGS: 6.2
+  RUB: 6.5
+  UZS: 0.043
